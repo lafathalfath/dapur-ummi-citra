@@ -1,0 +1,23 @@
+.menu-page-banner{
+    width: 100%;
+}
+.slides-menu{
+    background-color: #B8E664;
+    padding: 1px 0;
+}
+
+.menu-page{
+    display: block;
+    /* width: 100%; */
+}
+
+.menu-details{
+    display: block;
+    margin-bottom: 20px;
+    width: 100%; 
+}
+
+.tambahan{
+    background-color: #B8E664;
+    height: 50px;
+}

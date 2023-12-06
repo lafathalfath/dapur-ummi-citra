@@ -1,0 +1,113 @@
+.menu-details-image{
+    width: 100%;
+}
+.daftar-paket{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px; 
+    overflow-x: scroll;
+    overflow-y: hidden;
+    padding: 0 20px;
+}
+.daftar-paket::-webkit-scrollbar{
+    display: none;
+}
+.paket-details{
+    background-color: white;
+    min-width: 250px;
+    max-width: 250px;
+    height: 600px;
+    border: 1px solid black; 
+}
+.page-pakethemat .paket-details{
+    height: 300px;
+}
+.header-paket{
+    background-color: #9CED08;
+    padding: 10px;
+    text-align: center;
+}
+.header-paket>span{
+    font-size: 20px;
+    font-weight: 700;
+}
+@media only screen and (max-width: 600px){
+    .header-paket>span{
+        font-size: 16px;
+    }
+    .header-paket, .paket-list-details{
+        font-size: 14px;
+    } 
+    .paket-details{
+        height: 480px;
+    }
+}
+@media only screen and (max-width: 790px){
+    .detail-content{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center !important;
+    }
+    .details-gallery{
+        flex-direction: row !important;
+        /* overflow-x: scroll !important; */
+        padding: 0 !important;
+    }
+    .details-gallery>img{
+        width: 48% !important;
+    }
+}
+.paket-list-details{
+    padding: 10px;
+}
+.paket-list-details ol{
+    list-style: upper-alpha;
+}
+.menu-details-order{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.menu-details-order>a{ 
+    color: black;
+    font-weight: 700;
+    background-color: #9CED08;
+    padding: 10px;
+    margin: 30px;
+}
+.menu-details-order>a:hover{
+    background-color: #B8E664;
+}
+
+.detail-content{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+    padding: 20px; 
+    overflow-x: hidden;
+}
+.details-gallery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+}
+.details-gallery>img{
+    border-radius: 10px;
+    width: 100%;
+    /* min-width: 0; */
+}
+
+.detail-menu>ul>li{
+    list-style-type: none;
+    padding: 0;
+}
+.detail-menu>ul>li::before{
+    content: '-';
+    margin-right: 5px;
+}

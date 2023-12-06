@@ -1,0 +1,145 @@
+.highlight-detail{
+    background-color: #B8E664;
+    padding: 1px 0;
+}
+@media only screen and (max-width: 800px){
+    .menu-gallery{
+        gap: 20px !important;
+    }
+    .menu-card{
+        width: 250px !important;
+    }
+    .menu-card-img{
+        width: 250px !important;
+    }
+    .menu-card-overlay{
+        width: 100% !important;
+        height: 100% !important;
+        top: 0 !important;
+        left: 0 !important;
+        padding: 0 !important;
+        justify-content: space-around !important;
+    }
+}
+@media only screen and (max-width: 600px){
+    .highlight-detail>.menu-detail-nasibox{
+        top: 55.5px !important;
+    }
+}
+.menu-highlight{
+    margin: 50px 30px;
+}
+.menu-highlight>h1{
+    text-align: center;
+    font-size: 30px;
+}
+.menu-gallery{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 50px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+/* .menu-gallery::-webkit-scrollbar{
+    display: none;
+} */
+.menu-card{
+    position: relative;
+    width: 400px;
+}
+.menu-card:hover{
+    .menu-card-overlay{
+        display: flex;
+    }
+    .menu-card-txt{
+        display: none;
+    }
+}
+.menu-card-overlay{
+    color: #fff;
+
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    position: absolute;
+    padding: 30px;
+    top: 15%;
+    bottom: 0;
+    left: 12%;
+    right: 0;
+    height: 60%;
+    width: 60%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.menu-card-overlay>a{
+    color: #FFFF5C;
+    font-weight: 600;
+    font-size: 20px;
+}
+.menu-card-overlay>a:hover{
+    color: #f1fec4;
+}
+.menu-card-overlay-inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.menu-card-img {
+    display: block;
+    width: 360px;
+}
+  
+.menu-card-bck {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+    transition: .5s ease;
+    background-color: rgb(0, 0, 0, 0.3);
+}
+.menu-card-txt {
+    color: white;
+    font-size: 25px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.hideHighlight{
+    display: none;
+}
+.hide{
+    display: none;
+}
+.show{
+    display: block !important;
+}
+.highlight-detail>.menu-detail-nasibox{
+    display: none;
+    background-color: #fff;
+    position: absolute; 
+    top: 114px;
+    width: 100%;
+}
+.detail-on-highlight{
+    /* display: none; */
+    top: 0;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+    /* border: 5px solid red; */
+}

@@ -1,0 +1,47 @@
+.contact-page{
+    margin: 0;
+    padding: 0;
+}
+.contact-page h1{
+    font-size: 25px;
+    text-align: center;
+}
+.contact-page a{
+    color: black;
+}
+.contact-page a:hover{
+    color: blueviolet;
+}
+.contact-banner{
+    width: 100%;
+}
+.contact-details{
+    padding: 1em;
+}
+.contact-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 30px;
+    margin: 30px;
+    max-width: 90vw;
+}
+.contact-component-clock{
+    font-size: 24px;
+    font-weight: 700;
+    width: 100%;
+}
+.contact-component{
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.direct{
+    width: 50px;
+}

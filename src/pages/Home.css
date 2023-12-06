@@ -1,0 +1,113 @@
+.jumbotron{
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+/* .jumbotron::-webkit-scrollbar{
+    display: none;
+} */
+.slide1{
+    width: fit-content;
+    position: relative;
+}
+.banner-catering{
+    width: 90vw;
+}
+.jumbotron-card{
+    background-color: rgb(249, 249, 65, 0.59);
+    text-align: center;
+    width: 50vw;
+    height: fit-content;
+    padding: 30px;
+    border-radius: 10px;
+
+    position: absolute;
+    top: 50%;
+    bottom: 0;
+    left: 50%;
+    right: 0;
+    transform: translate(-50%, -50%);
+}
+.jumbotron-card>h1{
+    font-size: 2.5vw;
+}
+.order-now{
+    color: black;
+    font-weight: 700;
+    font-size: 20px;
+    background-color: #9CED08;
+    padding: 10px 20px;
+    border-radius: 50px;
+    border: 1px solid black;
+    /* top: 150px; */
+    margin: 0;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 50%);
+}
+.order-now>span{
+    color: #9CED08;
+}
+.order-now:hover{
+    background-color: #bbed08;
+}
+.home-desc{
+    margin: 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #EFEFEF;
+    border: 1px solid black;
+}
+.home-desc-card{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: space-around; */
+}
+.home-desc-txt{
+    margin: 30px;
+}
+.home-desc-card>div>img{
+    /* border: 1px solid red; */
+    margin: 30px;
+}
+@media only screen and (max-width: 622px){
+    .home-desc-card{
+        flex-direction: column;
+    }
+    .home-desc-card>div>img{
+        margin: 0 ;
+    }
+    .jumbotron-card{
+        width: 60vw;
+        padding: 15px;
+    }
+    .jumbotron-card>h1{
+        font-size: 5vw !important;
+        margin: 0;
+    }
+    .jumbotron-card>p{
+        font-size: 3vw;
+        margin: 10px 0;
+    }
+    .order-now{
+        font-size: 16px !important;
+        padding: 5px 10px;
+    }
+}
+
+.show{
+    display: block;
+}
+
+.hide{
+    display: none;
+}
